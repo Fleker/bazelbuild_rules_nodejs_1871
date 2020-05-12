@@ -1,0 +1,8 @@
+{
+    "name": "bazel-1871-typescript",
+    "private": true,
+    "license": "Apache-2.0",
+    "dependencies": {
+        "googleapis": "^39.0.0"
+    }
+}

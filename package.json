@@ -1,0 +1,23 @@
+{
+    "name": "bazel-1871",
+    "private": true,
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@bazel/bazel": "^2.1.0",
+        "@bazel/bazelisk": "^1.4.0",
+        "@bazel/typescript": "1.5.0",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "build": "bazelisk build",
+        "build:all": "bazelisk build //...",
+        "clean:all": "bazelisk clean",
+        "graph": "bazel query --output=graph ... | dot -Tpng > graph.png",
+        "preinstall:typescript": "cd typescript && npm install googleapis typescript",
+        "query": "bazelisk query.",
+        "query:all": "bazelisk query //...",
+        "test": "bazelisk test //...",
+        "version:bazel": "bazelisk version"
+    },
+    "version": "0.0.0"
+}
